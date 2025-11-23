@@ -57,7 +57,7 @@ This project was created for learning, experimenting, and showcasing backend + U
 
 ```
 📦ACE
- ┣ 📂chats/                # Stored chat history (.json)
+ ┣ 📂chats/               # Stored chat history (.json)
  ┣ 📜app.py               # Main Streamlit user interface
  ┣ 📜chat_manager.py      # CRUD operations for chats
  ┣ 📜llm.py               # Groq API streaming + title generation
