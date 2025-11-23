@@ -2,7 +2,6 @@
 
 ACE is a lightweight, ChatGPT-style conversational AI app built with **Python**, **Streamlit**, and the **Groq LLaMA-3.1 8B Instant model**.  
 This project was created for learning, experimenting, and showcasing backend + UI engineering skills.  
-The interview board can use this repository to understand how the system is designed, structured, and implemented.
 
 ---
 
@@ -24,7 +23,7 @@ The interview board can use this repository to understand how the system is desi
 ### ✅ **2. Chat Management UI**
 - **New Chat** button  
 - **Scrollable chat list**  
-- **Delete Chat** (sticky bottom button)  
+- **Delete Chat**
 - Dynamic highlighting of the selected chat.
 
 ### ✅ **3. ChatGPT-Style Streaming Responses**
