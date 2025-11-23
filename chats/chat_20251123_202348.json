@@ -1,0 +1,17 @@
+{
+    "title": "Removing Duplicate Numbers",
+    "messages": [
+        {
+            "role": "assistant",
+            "content": "Hello! I\u2019m your Groq-powered AI assistant."
+        },
+        {
+            "role": "user",
+            "content": "Write a Python function that removes duplicate numbers from a list while keeping the original order."
+        },
+        {
+            "role": "assistant",
+            "content": "### Removing Duplicates from a List in Python\n\nHere's a Python function that removes duplicate numbers from a list while keeping the original order. This function uses a dictionary to keep track of the elements we've seen so far, and checks before appending each element to the result list.\n\n```python\ndef remove_duplicates(input_list):\n    \"\"\"\n    Removes duplicate numbers from a list while keeping the original order.\n\n    Args:\n        input_list (list): The list to remove duplicates from.\n\n    Returns:\n        list: A new list with the duplicates removed.\n    \"\"\"\n    seen = set()\n    result = []\n\n    for element in input_list:\n        if element not in seen:\n            seen.add(element)\n            result.append(element)\n\n    return result\n\n# Example usage:\nnumbers = [5, 1, 2, 3, 1, 4, 5, 2, 6]\nprint(remove_duplicates(numbers))  # Output: [5, 1, 2, 3, 4, 6]\n```\n\nThis function has a time complexity of O(n) and a space complexity of O(n), where n is the number of elements in the input list.\n\nAlternatively, you can use a `dict.fromkeys()` method or a list comprehension with an if condition to achieve the same result in a more concise way:\n\n```python\ndef remove_duplicates(input_list):\n    return list(dict.fromkeys(input_list))\n\ndef remove_duplicates_alt(input_list):\n    return [x for i, x in enumerate(input_list) if x not in input_list[:i]]\n\n# Example usage:\nnumbers = [5, 1, 2, 3, 1, 4, 5, 2, 6]\nprint(remove_duplicates(numbers))  # Output: [5, 1, 2, 3, 4, 6]\nprint(remove_duplicates_alt(numbers))  # Output: [5, 1, 2, 3, 4, 6]\n```"
+        }
+    ]
+}
